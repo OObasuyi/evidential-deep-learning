@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Layer, Dense
 
 
 class DenseNormal(Layer):
-    def __init__(self, units.**kwargs):
+    def __init__(self, units,**kwargs):
         super(DenseNormal, self).__init__(**kwargs)
         self.units = int(units)
         self.dense = Dense(2 * self.units)
